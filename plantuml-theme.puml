@@ -1,0 +1,13 @@
+!$globaletting = {"conditionendstyle": "hline", "backgroundcolor": "white", "defaultfontname" :"arial", "arrowthickness": "1"}
+!foreach $key in %get_json_keys($globaletting)
+skinparam $key $globaletting[$key]
+!endfor
+!$bordersetting = {"actor":"#b58900","card":"#e58e26","cloud":"#6c71c4","component":"#268bd2","package":"#dc322f","node":"#859900","database":"#16a085","entity":"#8e44ad","file":"#d35400","queue":"#546de5","rectangle":"#636e72","storage":"#596275","partition":"#dc322f","map": "#130f40", "activity": "#6c71c4", "state": "#6c71c4"}
+!foreach $key in %get_json_keys($bordersetting)
+skinparam $key {
+    bordercolor $bordersetting[$key]
+    backgroundcolor white
+    borderthickness 1
+    diamondbordercolor red
+}
+!endfor
